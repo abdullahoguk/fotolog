@@ -1,0 +1,65 @@
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  background-color: #000000;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  padding: 25vh 0em 1rem 0em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+a {
+  color: rgba(#000, 0.7);
+
+  &:focus,
+  &:hover {
+    color: rgba(#000, 0.6);
+  }
+}
+
+
+
+.gallery {
+  width: 75vw;
+	display: flex;
+	overflow: hidden;
+	flex-wrap: wrap;
+  margin: -2.5px;
+  align-self: center;
+}
+/*
+.gallery:after {
+	content: '';
+	flex-grow: 999999999;
+	min-width: 300px;
+	height: 0;
+}
+*/
+
+.gallery > a {
+  /*
+	position: relative;
+	display: block;
+	height: 25vh;
+  margin: 2.5px;
+  */
+  flex-grow: 1;
+  margin: .1em;
+  border: grey solid 5px;
+}
+.gallery_item {
+	height: 25vh;
+	object-fit: cover;
+	max-width: 100%;
+	min-width: 100%;
+  vertical-align: bottom;
+  
+}
