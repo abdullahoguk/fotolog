@@ -4,7 +4,7 @@ title: photos.log
 
 <div class="gallery grid">
 <% data.photos.photos.photo.each do |item| %>
-  <a href="/photo/<%= item.id %>" > <img class="gallery_item" src="<%= item.url_z %>"></img> </a>
+  <a href="./photo/<%= item.id %>" > <img class="gallery_item" src="<%= item.url_z %>"></img> </a>
 <% end %>
 </div>
 
@@ -13,3 +13,4 @@ title: photos.log
   "https://middlemanapp.com/basics/templating_language/",
   target: "_blank"
 ) %>
+

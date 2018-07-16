@@ -7,7 +7,7 @@ end
 activate :livereload
 activate :directory_indexes
 activate :deploy do |deploy|
-  deploy.method = :git
+  deploy.deploy_method = :git
   deploy.remote = 'git@github.com:abdullahoguk/fotolog.git'
   deploy.branch = 'gh-pages'
   deploy.build_before = true
@@ -47,4 +47,5 @@ end
 configure :build do
   activate :minify_css
   activate :minify_javascript
+  activate :relative_assets
 end
